@@ -12,8 +12,16 @@ public class GameManager : MonoBehaviour
 
     private int[] Bloco;
     private int[] Conquista;
-    
-  
+
+    #region Singleton
+    public static GameManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+    #endregion
+
 
     // Start is called before the first frame update
     void Start()
