@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     #region Singleton
     public static GameManager instance;
 
+
     private void Awake()
     {
         instance = this;
@@ -25,12 +26,21 @@ public class GameManager : MonoBehaviour
     
     private void CriarGrade() 
     {
-        for (int i = 0; i < linha; i++)
-        {    
-        
-        
-        
-        
+        for (int x = 0; x < linha; x++)
+        {
+
+            for (int y = 0; y < coluna; y++)
+            {
+
+               Vector3 position = new Vector3(x * espacamento, y * espacamento, 0);
+                
+               
+
+
+            }
+
+
+
         }
 
 
