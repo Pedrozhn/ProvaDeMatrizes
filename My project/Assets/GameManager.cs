@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     #region Singleton
     public static GameManager instance;
 
+
     private void Awake()
     {
         instance = this;
@@ -25,16 +26,45 @@ public class GameManager : MonoBehaviour
     
     private void CriarGrade() 
     {
-        for (int i = 0; i < linha; i++)
-        {    
-        
-        
-        
-        
+        for (int x = 0; x < linha; x++)
+        {
+
+            for (int y = 0; y < coluna; y++)
+            {
+
+                Vector3 position = new Vector3(x * espacamento, y * espacamento, 0);
+                // Instancia um novo bloco na posição calculada.
+                // Armazena o bloco instanciado na matriz.
+            }
         }
+
+        // Posiciona os jogadores no início do jogo.
+        // Calcula a posição inicial do jogador 1.
+        // Calcula a posição inicial do jogador 2.
+
+        // Ajusta a câmera para se centrar na grade.
+        // Posiciona a câmera no centro da grade.
+        // Ajusta o zoom da câmera com base no tamanho da grade.
+
+        // Instancia os jogadores nas suas posições iniciais.
+
+
+
 
 
     }
+    public void ConquistarTerritorio() 
+    {
+       
+    
+    }
+
+
+
+
+
+    
+
 
     // Start is called before the first frame update
     void Start()
