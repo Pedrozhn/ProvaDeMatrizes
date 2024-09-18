@@ -14,9 +14,14 @@ public class Bloco : MonoBehaviour
         Color Bloco = Color.white;
     }
     public void AlterarConquista(bool jogador1, Color CorDoJogador)
-    {if
-        Conquistado = true;
+     {  Conquistado = true;
         Color Bloco = CorDoJogador;
+        if (Conquistou == 0) 
+        {
+            
+        }
+        
+
 
 
 
