@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     #region Singleton
     public static GameManager instance;
 
+    public int[] Bloco1 { get => Bloco;}
 
     private void Awake()
     {
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
     {
        for (int conquista = 0; conquista < 10; conquista++) 
         {
-            if (conquista == Bloco.Length) //Não sei oque poderia fazer aqui
+            if (conquista == Bloco1.Length) //Não sei oque poderia fazer aqui
             {
             
             
