@@ -11,6 +11,6 @@ public class Bloco : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-
+        Color.Bloco = Color.white;
     }
 }
