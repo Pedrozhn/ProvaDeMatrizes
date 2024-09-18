@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
     }
     public void ConquistarTerritorio() 
     {
-       
+       for (int conquista = 0,)
     
     }
 
