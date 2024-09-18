@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Bloco : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool Conquistado;
+    private SpriteRenderer spriteRenderer;
+    private int Conquistou;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 }
