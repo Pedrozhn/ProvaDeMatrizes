@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using UnityEngine;
 using static Unity.Collections.AllocatorManager;
 
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour
     private int[] Bloco;
     private int[] Conquista;
 
+
+  
     #region Singleton
     public static GameManager instance;
 
@@ -26,12 +29,14 @@ public class GameManager : MonoBehaviour
     
     private void CriarGrade() 
     {
+        
         for (int x = 0; x < linha; x++)
         {
-
+         
+            
             for (int y = 0; y < coluna; y++)
             {
-
+               
                 Vector3 position = new Vector3(x * espacamento, y * espacamento, 0);
                 // Instancia um novo bloco na posição calculada.
                 // Armazena o bloco instanciado na matriz.
@@ -48,16 +53,22 @@ public class GameManager : MonoBehaviour
 
         // Instancia os jogadores nas suas posições iniciais.
 
-
+       
+       
 
 
 
     }
+    
     public void ConquistarTerritorio() 
     {
        for (int conquista = 0; conquista < 10; conquista++) 
         {
-        
+            if (conquista == Bloco.Length) //Não sei oque poderia fazer aqui
+            {
+            
+            
+            }
         
         }
     
