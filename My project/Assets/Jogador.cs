@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Jogador : MonoBehaviour
@@ -31,7 +32,18 @@ public class Jogador : MonoBehaviour
 
     private void Update()
     {
-        
+        if (jogador1) 
+        {
+            Input.GetKeyDown(KeyCode.A);
+
+            Input.GetKeyDown(KeyCode.W);
+
+            Input.GetKeyDown(KeyCode.S);
+
+            Input.GetKeyDown(KeyCode.D);
+
+        }
+        else (jogador2)
     }
 
 
