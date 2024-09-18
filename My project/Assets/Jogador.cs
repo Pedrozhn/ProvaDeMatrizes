@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class Jogador : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+ [SerializeField]
+ private bool jogador1;
+ [SerializeField]
+ private bool CorDoJogador;
+
+    private void Start()
     {
-        
+        if (jogador1 != false) 
+        {
+         jogador1 = GetComponent<Rigidbody2D>();
+         jogador1.Velocity = new Vector3(1, 1);
+
+        }
+     
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
 }
