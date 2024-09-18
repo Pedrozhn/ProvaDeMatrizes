@@ -13,13 +13,13 @@ public class Bloco : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         Color Bloco = Color.white;
     }
-    public void AlterarConquista(bool jogador1, Color CorDoJogador)
-    {if
-        Conquistado = true;
-        Color Bloco = CorDoJogador;
+    //public void AlterarConquista(bool jogador1, Color CorDoJogador)
+    //{if
+   //     Conquistado = true;
+    //    Color Bloco = CorDoJogador;
 
 
 
 
-    }
+   // }
 }

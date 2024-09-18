@@ -43,7 +43,7 @@ public class Jogador : MonoBehaviour
             Input.GetKeyDown(KeyCode.D);
 
         }
-        else (jogador2)
+        
     }
 
 
